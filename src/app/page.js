@@ -7,7 +7,10 @@
 // import AllProducts from "./4-5-25/AllProducts";
 // import Carousel from "./5-5-25/Carousel ";
 // import ChangeBg from "./6-5-25/ChangeBg";
-import TodoApp from "./from ChatGPT/day - 1/TodoApp";
+// import TodoApp from "./from ChatGPT/day - 1/TodoApp";
+// import Reacting from "./7-5-25/Reacting";
+// import OnPointerMove from "./7-5-25/OnPointerMove";
+import Counter from "./10-5-25/Counter";
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
     // <AllProducts />
     // <Carousel />
     // <ChangeBg />
-    <TodoApp />
+    // <TodoApp />
+    // <Reacting />
+    // <OnPointerMove />
+    <Counter />
   );
 }
