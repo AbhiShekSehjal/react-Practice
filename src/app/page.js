@@ -10,9 +10,19 @@
 // import TodoApp from "./from ChatGPT/day - 1/TodoApp";
 // import Reacting from "./7-5-25/Reacting";
 // import OnPointerMove from "./7-5-25/OnPointerMove";
-import Counter from "./10-5-25/Counter";
+// import Counter from "./10-5-25/Counter";
+import Navbar from "./11-5-25/components/Navbar";
+import { userContext } from "./11-5-25/context/userContext";
 
 export default function Home() {
+
+  let user = {
+    name: "Abhishek sehjal",
+    age: 21,
+    profession: "full stack developer",
+    salery: 60000
+  };
+
   return (
     // <CheckUser/>
     // <UseState />
@@ -23,6 +33,9 @@ export default function Home() {
     // <TodoApp />
     // <Reacting />
     // <OnPointerMove />
-    <Counter />
+    // <Counter />
+    <userContext.Provider value={user}>
+      <Navbar />
+    </userContext.Provider>
   );
 }
