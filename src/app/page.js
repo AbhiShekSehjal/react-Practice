@@ -11,17 +11,23 @@
 // import Reacting from "./7-5-25/Reacting";
 // import OnPointerMove from "./7-5-25/OnPointerMove";
 // import Counter from "./10-5-25/Counter";
-import Navbar from "./11-5-25/components/Navbar";
-import { userContext } from "./11-5-25/context/userContext";
+
+// import Navbar from "./11-5-25/components/Navbar";
+// import { userContext } from "./11-5-25/context/userContext";
+
+// import Counter from "./10-5-25/another one/Counter";
+
+import Card from "./11-5-25/another one/components/Card";
+import ContextProvider from "./11-5-25/another one/context/ContextProvider";
 
 export default function Home() {
 
-  let user = {
-    name: "Abhishek sehjal",
-    age: 21,
-    profession: "full stack developer",
-    salery: 60000
-  };
+  // let user = {
+  //   name: "Abhishek sehjal",
+  //   age: 21,
+  //   profession: "full stack developer",
+  //   salery: 60000
+  // };
 
   return (
     // <CheckUser/>
@@ -34,8 +40,14 @@ export default function Home() {
     // <Reacting />
     // <OnPointerMove />
     // <Counter />
-    <userContext.Provider value={user}>
-      <Navbar />
-    </userContext.Provider>
+    // <userContext.Provider value={user}>
+    //   <Navbar />
+    // </userContext.Provider>
+    // <Counter />
+
+    <ContextProvider>
+      <Card />
+    </ContextProvider>
+    
   );
 }
